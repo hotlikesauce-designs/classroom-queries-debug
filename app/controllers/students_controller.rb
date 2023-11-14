@@ -13,6 +13,7 @@ class StudentsController < ApplicationController
   end
 
   def create
+    #Parameters: {"query_email"=>"test@gmail.com", "query_name"=>"Adam", "query_last_name"=>"Smith"}
     @student = Student.new
     @student.first_name = params.fetch("query_first_name")
     @student.last_name = params.fetch("query_last_name")
