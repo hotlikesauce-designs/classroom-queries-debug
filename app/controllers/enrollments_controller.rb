@@ -1,4 +1,5 @@
 class EnrollmentsController < ApplicationController
+  #{"query_student_id"=>"1", "query_course_id"=>"1", "controller"=>"enrollments", "action"=>"create"}
   def create
     @enrollment = Enrollment.new
     @enrollment.course_id = params.fetch("query_course_id")
